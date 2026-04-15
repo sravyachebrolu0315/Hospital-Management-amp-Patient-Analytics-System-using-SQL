@@ -1,6 +1,8 @@
+-- CREATING DATABASE
 CREATE DATABASE hospital_db;
 USE hospital_db;
 
+-- CREATING TABLES
 -- Patients Table
 CREATE TABLE Patients (
     patient_id INT PRIMARY KEY,
@@ -36,6 +38,7 @@ CREATE TABLE Treatments (
     FOREIGN KEY (patient_id) REFERENCES Patients(patient_id)
 );
 
+-- INSERTING SAMPLE DATA IN THE DATABASE
 -- Patients
 INSERT INTO Patients VALUES
 (1, 'Amit', 30, 'Male'),
@@ -67,6 +70,7 @@ INSERT INTO Treatments VALUES
 (5, 4, 'Heart Disease', 4500, '2026-04-07'),
 (6, 1, 'Heart Disease', 5200, '2026-04-10');
 
+-- ANALYSIS
 -- 1. Most Consulted Doctors
 SELECT d.doctor_id, d.name, COUNT(a.appointment_id) AS total_visits
 FROM Doctors d
