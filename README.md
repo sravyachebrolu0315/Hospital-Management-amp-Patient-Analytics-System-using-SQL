@@ -1,4 +1,4 @@
-# Hospital-Management-amp-Patient-Analytics-System-using-SQL
+# Hospital-Management-and-Patient-Analytics-System-using-SQL
 
 <h3>Problem Statement: Hospital Management & Patient Analytics System </h3>
 <p>Hospitals need efficient systems to manage patient records and analyze treatment data.</p>
